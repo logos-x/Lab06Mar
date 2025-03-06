@@ -5,7 +5,7 @@ let productModel = require('../schema/product')
 
 function buildQuery(obj) {
     // console.log(obj);
-    let result = {};
+    let result = {isDelete: false};
     if (obj.name) {
         result.name = new RegExp(obj.name, "i");
     }

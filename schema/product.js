@@ -21,6 +21,7 @@ let productSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
+    isDelete: { type: Boolean, default: false }
 }, {
     timestamps: true
 });
